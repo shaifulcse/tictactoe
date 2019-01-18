@@ -100,6 +100,17 @@ public class Board {
     private boolean isOnLeftDiag(int col, int row){
         return (col == 0 && row == 2) || (col == 1 && row == 1) || (col == 2 & row == 0);
     }
+    
+    public boolean isFull() {
+    	for(int i = 0; i < 3; i++) {
+    		for(int j = 0; j < 3; j++) {
+    			if(isSquareAvailable(i,j)) {
+    				return false;
+    			}
+    		}
+    	}
+    	return true;
+    }
 
     public void printBoard(){
         for(int i  = 0; i < 3; i++){
