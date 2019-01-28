@@ -79,7 +79,7 @@ public class TicTacToeGame {
         }else {
             if (winner == Player.X) this.playerXWins += 1;
             else if (winner == Player.O) this.playerOWins += 1;
-        	System.out.println("Player " + winner + " has won the game!");
+            System.out.println("Player " + winner + " has won the game!");
         }
 
     }
