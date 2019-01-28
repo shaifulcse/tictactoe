@@ -55,7 +55,7 @@ public class TicTacToeGame {
         while (board.getWinner() == null){
         	
             if(board.isFull()) {
-            	break;
+                break;
             }
             
             board.printBoard();
