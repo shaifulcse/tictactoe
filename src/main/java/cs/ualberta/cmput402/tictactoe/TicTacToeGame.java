@@ -75,7 +75,7 @@ public class TicTacToeGame {
         Player winner = board.getWinner();
         if(winner == null) {
             this.ties += 1;
-        	System.out.println("Tie Game!");
+            System.out.println("Tie Game!");
         }else {
             if (winner == Player.X) this.playerXWins += 1;
             else if (winner == Player.O) this.playerOWins += 1;
